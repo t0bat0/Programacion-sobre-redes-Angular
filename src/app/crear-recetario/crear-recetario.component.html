@@ -1,0 +1,49 @@
+
+
+<p>Crea tu receeta!!!!!</p>
+<form >
+    <label> Nombre de la receta: <input type="text" [(ngModel)]="nombre"  name="nombre"required>
+    </label>
+    <br>
+   
+    <br>
+    <label> Descripcion : <input type="text" [(ngModel)]="descripcion" name="descripcion"required>
+    </label>
+    <br>
+    <br>
+    <label> Cantidad : <input type="text" [(ngModel)]="cantidad" name="cantidad"required>
+    </label>
+    <br>
+    <br>
+    <label> Medida : 
+        <select name="Medida" [(ngModel)]="unidad" >
+            <option value="GRAMO">Gramos</option>
+            <option value="LITRO">Litros</option>
+            <option value="UNIDAD">Unidades</option>
+          </select >
+          {{unidad}}
+    </label>
+    <br>
+  
+    <button (click)="inresar_receta()"   >Submit</button>
+  </form>
+
+
+  <p>aqui tienes todas las recetas </p>
+  <button (click)="mostrar_recetario()"> muestrame</button>
+<br>
+<p>aqui puedes borrar uno</p>
+<input type="text"  [(ngModel)]="nombre_delete"  name="nombre_delete"required>
+<br>
+<br>
+<button (click)="Eliminar_receta()">matar receta</button>
+<br>
+<br>
+<button (click)="Cambiar_receta()">cambiar receta</button>
+<br>
+<br>
+<button (click)="Actualizar_receta()">actualizar receta</button>
+<br>
+<br>
+<a href="" routerLink="/log_in">log_in</a>
+<br>

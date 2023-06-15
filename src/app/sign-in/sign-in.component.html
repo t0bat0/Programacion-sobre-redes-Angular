@@ -1,0 +1,15 @@
+<p>register works!</p>
+<form >
+    <label> Name: <input type="text" [(ngModel)]="nombre" name="nombre" required>
+    </label>
+    <br>
+   
+    <br>
+    <label> Password: <input type="password" [(ngModel)]="passw" name="passw" required>
+    </label>
+    
+    <br>
+    <button  (click)="sign_in()">Submit</button>
+  </form>
+  <br>
+  <a href="" routerLink="/log_in">ingresate</a>
