@@ -7,6 +7,8 @@ import { ApiRequestService } from '../api-request.service';
   styleUrls: ['./crear-recetario.component.css']
 })
 export class CrearRecetarioComponent {
+  a:Array<object>=[]
+
   recetas:any
   nombre:String = ""
   nombre_delete:String=""
@@ -28,6 +30,11 @@ export class CrearRecetarioComponent {
   
   mostrar_recetario(){
     this.recetas=this.apiRequestService.Show_recetas();
+    
+    console.log(this.a.values);
+    
+    
+    
 
   }
 
