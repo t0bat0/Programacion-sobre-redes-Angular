@@ -15,6 +15,11 @@ export class LogInComponent {
     this.apiRequestService.Ingreso_Usuario(this.nombre,this.passw)
   }
 
-
+  check_token(){
+  if(localStorage.getItem('JWT_token') === "" ){
+    return false
+  }
+  else return true
+}
 
 }

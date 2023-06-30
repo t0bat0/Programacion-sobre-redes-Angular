@@ -11,11 +11,11 @@
     </label>
     
     <br>
-    <button  (click)="log_in()">Submit</button>
+    <button [disabled]="nombre == ''  ||  passw ==''" (click)="log_in()">Submit</button>
   </form>
-
-
-  <a href="" routerLink="/">show me the recetation</a>
   <br>
-  <a href="" routerLink="/sign_in">show  that</a>
+ <button routerLink="/recetario" [disabled]="check_token()"   >show me the recetation</button> 
+ 
+
+
 

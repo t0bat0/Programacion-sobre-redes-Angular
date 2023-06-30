@@ -9,7 +9,7 @@
     </label>
     
     <br>
-    <button  (click)="sign_in()">Submit</button>
+    <button   [disabled]="nombre == ''  ||  passw ==''" (click)="sign_in()">Submit</button>
   </form>
   <br>
-  <a href="" routerLink="/log_in">ingresate</a>
+  

@@ -31,6 +31,11 @@
 
   <p>aqui tienes todas las recetas </p>
   <button (click)="mostrar_recetario()"> muestrame</button>
+  <br>
+  <br>
+  <span> {{ recetas | json }} </span>
+
+<br>
 <br>
 <p>aqui puedes borrar uno</p>
 <input type="text"  [(ngModel)]="nombre_delete"  name="nombre_delete"required>

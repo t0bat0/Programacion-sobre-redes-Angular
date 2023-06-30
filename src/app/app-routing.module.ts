@@ -5,8 +5,14 @@ import { LogInComponent } from './log-in/log-in.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
+  {
+    path:"",
+    component: SignInComponent,
+    title:"messi_register"
+  },
     {  
-    path:'',
+      
+    path:'recetario',
     component:CrearRecetarioComponent,
     title:"Messi_cooking"
     },
@@ -14,14 +20,10 @@ const routes: Routes = [
     path:"log_in",
     component:LogInComponent,
     title:"messi_log_in"
-  },
-  {
-    path:"sign_in",
-    component: SignInComponent,
-    title:"messi_register"
   }
-
   
+
+
 ];
 
 @NgModule({

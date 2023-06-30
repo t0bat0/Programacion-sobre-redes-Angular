@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ApiRequestService {
+  
   private token: String = '';
   private url = 'http://localhost:9090/';
   private header = new HttpHeaders({
@@ -56,7 +57,7 @@ export class ApiRequestService {
   Show_recetas() {
     this.http.get(this.url + 'recetas', { headers: this.header }).subscribe(
       (response) => {
-        console.log(response);
+        return response
       },
       (error) => {
         console.log(error);
